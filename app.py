@@ -11,4 +11,4 @@ def submit():
     phone=request.form.get('phone')
     return render_template('result.html',name=username,email=email,year=year,phone=phone)
 if __name__ == "_main_":
-    app.run(host='0.0.0.0',port="5001",debug=True)
+    app.run(debug=True)
